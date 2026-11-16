@@ -1,0 +1,47 @@
+{
+  "regions": [
+    {
+      "id": "header",
+      "kind": "chrome",
+      "grid": "A0:J1",
+      "note": "Solid dark header with mark, local library, search and import."
+    },
+    {
+      "id": "day-rail",
+      "kind": "control",
+      "grid": "A1:B9",
+      "note": "Chronological day/session index; actual days and counts drive its height."
+    },
+    {
+      "id": "day-heading",
+      "kind": "text",
+      "grid": "C1:G2",
+      "note": "Geist day title, real duration and camera-time status."
+    },
+    {
+      "id": "scope-controls",
+      "kind": "control",
+      "grid": "H1:J2",
+      "note": "Day/entire trip and details."
+    },
+    {
+      "id": "footage",
+      "kind": "image",
+      "grid": "C2:J7",
+      "note": "Dynamic local video, not a generated plate. Never replace original footage with the generated comp image.",
+      "bleed": true
+    },
+    {
+      "id": "playback",
+      "kind": "control",
+      "grid": "C7:J8",
+      "note": "Cumulative seek, transport, volume, speed and fullscreen."
+    },
+    {
+      "id": "filmstrip",
+      "kind": "image",
+      "grid": "C8:J9",
+      "note": "Dynamic virtualized JPG previews from the selected local folder; no copied footage shipped in app."
+    }
+  ]
+}
