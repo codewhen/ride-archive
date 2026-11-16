@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-15T18:30:36.513442+00:00",
+  "title": "Design System: Ride Archive / CodeWhen",
+  "extensions": {
+    "colorMeta": {
+      "background": {
+        "role": "neutral",
+        "displayName": "Graphite green canvas"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface"
+      },
+      "elevated": {
+        "role": "neutral",
+        "displayName": "Elevated"
+      },
+      "hover": {
+        "role": "neutral",
+        "displayName": "Hover"
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Mineral white"
+      },
+      "secondary": {
+        "role": "neutral",
+        "displayName": "Secondary"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted"
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Border"
+      },
+      "primary": {
+        "role": "primary",
+        "displayName": "Coral action"
+      },
+      "focus": {
+        "role": "secondary",
+        "displayName": "Lime status and focus"
+      },
+      "error": {
+        "role": "secondary",
+        "displayName": "Error"
+      }
+    },
+    "motion": [
+      {
+        "name": "control-feedback",
+        "value": "160ms ease-out",
+        "purpose": "Background, color and border state feedback; reduced-motion override applies."
+      },
+      {
+        "name": "loading-spinner",
+        "value": "850ms linear infinite",
+        "purpose": "Pending video loading; reduced-motion override applies."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1700px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1250px"
+      },
+      {
+        "name": "drawer",
+        "value": "980px"
+      },
+      {
+        "name": "mobile",
+        "value": "720px"
+      }
+    ],
+    "shadows": [
+      {
+        "name": "dialog",
+        "value": "0 20px 80px #0008",
+        "purpose": "Temporary import and health dialogs."
+      },
+      {
+        "name": "navigation-overlay",
+        "value": "-12px 0 40px #0006",
+        "purpose": "Native modal day rail uses the shared responsive-panel shadow."
+      },
+      {
+        "name": "details-overlay",
+        "value": "-12px 0 40px #0006",
+        "purpose": "Responsive detail drawer."
+      }
+    ],
+    "layout": {
+      "desktopVideoStage": {
+        "minWidth": "981px",
+        "maxHeight": "max(240px, calc(100dvh - 580px))",
+        "purpose": "Keep transport and full filmstrip visible together with details open or closed. Contained video preserves source aspect ratio with gutters; the 240px minimum permits scrolling on short viewports. Mobile sizing is unchanged."
+      }
+    },
+    "typographyMeta": {
+      "empty-headline": {
+        "displayName": "Compact empty heading",
+        "purpose": "Desktop introduction; mobile uses empty-headline-mobile."
+      },
+      "empty-headline-mobile": {
+        "displayName": "Mobile empty heading",
+        "purpose": "36px at widths up to 720px."
+      },
+      "copy": {
+        "displayName": "Supporting copy",
+        "purpose": "12px captions, help and detail copy."
+      },
+      "measurement": {
+        "displayName": "Compact measurement",
+        "purpose": "10px session metadata, durations and mobile seek time."
+      },
+      "measurement-prominent": {
+        "displayName": "Prominent measurement",
+        "purpose": "11px desktop seek time and filmstrip timestamps."
+      }
+    },
+    "responsivePanels": {
+      "rail": {
+        "modalQuery": "(max-width: 720px)",
+        "width": "280px"
+      },
+      "details": {
+        "modalQuery": "(max-width: 980px)",
+        "width": "min(380px, 100vw)"
+      },
+      "fullscreen": "Both panels use native modal dialogs during fullscreen; notes remain usable.",
+      "interaction": "Tab loops, Escape and backdrop dismiss, prior connected focus is restored.",
+      "backdrop": "#050806b8",
+      "shadow": "-12px 0 40px #0006"
+    },
+    "scopedCleanup": {
+      "scope": "Existing CodeWhen implementation simplified; no redesign.",
+      "empty": "One Import folder action; no disabled search, rail, perk rows or filename examples.",
+      "loaded": "Single text Details control; selected thumbnail reads Selected; filmstrip arrows only on overflow; duplicate shortcut, privacy and local-status rows removed.",
+      "import": "Concise introduction with compatibility picker under Folder access options disclosure.",
+      "fullscreen": "Exit fullscreen label/icon reflects state; errors use status notification.",
+      "authority": "Pinned locally hosted Geist and Geist Mono intentionally retained despite generic familiarity advisory."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "html": "<button class=\"ds-primary\">Import folder</button>",
+      "css": ".ds-primary{font-family:Geist,system-ui,sans-serif;color:var(--ink,#f2efe5);border:1px solid var(--border,#39413b);border-radius:3px;min-height:40px;padding:9px 13px;transition:background 160ms ease-out;background:var(--coral,#ff7954);color:#17130f;cursor:pointer}.ds-primary:hover{background:#ff9978}.ds-primary:focus-visible{outline:2px solid var(--lime,#c4f16c);outline-offset:3px;}",
+      "description": "Primary button with visible keyboard focus."
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "html": "<button class=\"ds-secondary\">Import folder</button>",
+      "css": ".ds-secondary{font-family:Geist,system-ui,sans-serif;color:var(--ink,#f2efe5);border:1px solid var(--border,#39413b);border-radius:3px;min-height:40px;padding:9px 13px;transition:background 160ms ease-out;background:var(--raised,#1c201d);color:var(--ink,#f2efe5);cursor:pointer}.ds-secondary:hover{background:var(--hover,#272c27)}.ds-secondary:focus-visible{outline:2px solid var(--lime,#c4f16c);outline-offset:3px;}",
+      "description": "Secondary button with visible keyboard focus."
+    },
+    {
+      "name": "Text field",
+      "kind": "input",
+      "refersTo": "input",
+      "html": "<input class=\"ds-input\" aria-label=\"Search recordings\" placeholder=\"Search recordings\">",
+      "css": ".ds-input{font-family:Geist,system-ui,sans-serif;color:var(--ink,#f2efe5);border:1px solid var(--border,#39413b);border-radius:3px;min-height:40px;padding:9px 13px;transition:background 160ms ease-out;background:var(--bg,#101211);padding:8px 11px}.ds-input:hover{border-color:#778071}.ds-input:focus-visible{outline:2px solid var(--lime,#c4f16c);outline-offset:3px;}",
+      "description": "Dark bordered search field."
+    },
+    {
+      "name": "Active day",
+      "kind": "nav",
+      "refersTo": "",
+      "html": "<button class=\"ds-day\" aria-current=\"true\">Day 01 <span>Local recording date</span></button>",
+      "css": ".ds-day{font-family:Geist,system-ui,sans-serif;color:var(--ink,#f2efe5);border:1px solid var(--border,#39413b);border-radius:3px;min-height:40px;padding:9px 13px;transition:background 160ms ease-out;display:block;width:100%;text-align:left;background:var(--raised,#1c201d);border:0;border-left:1px solid var(--coral,#ff7954);border-radius:0;min-height:66px;padding:12px 10px;cursor:pointer}.ds-day span{display:block;font-size:10px;color:var(--muted,#aaafa4);margin-top:4px}.ds-day:hover{background:var(--surface,#171a18)}.ds-day:focus-visible{outline:2px solid var(--lime,#c4f16c);outline-offset:3px;}",
+      "description": "Coral edge and subordinate metadata; specimen labels are illustrative."
+    },
+    {
+      "name": "Dialog surface",
+      "kind": "card",
+      "refersTo": "dialog",
+      "html": "<section class=\"ds-dialog\" aria-label=\"Recording health\"><h2>Recording health</h2><p>Review the affected local files.</p></section>",
+      "css": ".ds-dialog{font-family:Geist,system-ui,sans-serif;background:var(--surface,#171a18);color:var(--ink,#f2efe5);border:1px solid var(--border,#39413b);border-radius:8px;padding:24px;box-shadow:0 20px 80px #0008}.ds-dialog h2{font-size:22px;font-weight:540;margin:0}.ds-dialog p{font-size:12px;line-height:1.65;color:var(--muted,#aaafa4)}",
+      "description": "Bounded overlay surface for import and health."
+    }
+  ],
+  "narrative": {
+    "northStar": "Expedition instrument console",
+    "overview": "The user-selected CodeWhen visual language is the authority: graphite-green surfaces, mineral-white text, coral actions and lime focus/status. The approved adaptation is `.impeccable/mocks/codewhen-player.png`; its generated labels are illustrative.\n\nThe established expedition instrument console stays compact and footage-led. Locally hosted Geist and Geist Mono supply clear headings and precise recorded-time labels. Full-color local video and local thumbnail images carry the imagery.",
+    "keyCharacteristics": [
+      "Graphite-green tonal layers and subtle dividers.",
+      "Coral actions and selection; lime playback, status and focus.",
+      "Compact controls around dominant source footage."
+    ],
+    "rules": [],
+    "dos": [
+      "Do preserve the user-pinned CodeWhen palette and locally hosted typography.",
+      "Do compute footage labels, counts, durations and health from actual local data.",
+      "Do keep Save moment visibly available on phones and preserve keyboard focus."
+    ],
+    "donts": [
+      "Don't treat generated comp labels or counts as application data.",
+      "Don't hide essential player actions behind hover.",
+      "Don't add ornamental telemetry or claim unknown sensor semantics."
+    ]
+  },
+  "mode": "operate",
+  "approvedComp": ".impeccable/mocks/codewhen-player.png",
+  "seekPreview": {
+    "desktopWidth": 192,
+    "mobileWidth": 170,
+    "offset": 12,
+    "radius": 5,
+    "source": "paired recording thumbnail",
+    "semantics": "representative clip image, not exact frame",
+    "triggers": [
+      "hover",
+      "drag",
+      "keyboard focus/change"
+    ]
+  },
+  "selectorControl": {
+    "menuBackground": "#1c201d",
+    "rowHeight": 38,
+    "mobileRowHeight": 44,
+    "maxHeight": 320,
+    "borderRadius": 5,
+    "keyboard": "select-only combobox",
+    "singleTrip": "plain folder name",
+    "fullscreen": "portal inside fullscreen element"
+  },
+  "skipControl": {
+    "target": 44,
+    "icon": 26,
+    "medium": "single SVG numeral and circular arrow"
+  }
+}

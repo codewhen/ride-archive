@@ -1,0 +1,185 @@
+
+> ride-archive@1.0.0 audit:reference
+> node scripts/audit-reference.mjs video_full_ride
+
+{
+  "folder": "/Users/angshuman.barpujari/works/ride horsley hills/video_full_ride",
+  "files": 3374,
+  "videos": 1133,
+  "gigabytes": 61.041846638,
+  "readable": 1116,
+  "recordedHours": 18.419894728611112,
+  "incompleteGroups": 20,
+  "issues": [
+    {
+      "file": "20250101_000004_060_001330",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250101_000004_060_001330",
+      "issue": "Expected one .txt, found 0"
+    },
+    {
+      "file": "20250101_001434_060_001358",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250101_005944_060_001404",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250101_030217_060_001493",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250101_042956_060_001555",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250101_042956_060_001555",
+      "issue": "Expected one .txt, found 0"
+    },
+    {
+      "file": "20250101_061653_060_001576",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250101_083659_060_001595",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250101_103112_060_001598",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250101_104811_060_001615",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250101_114922_060_001634",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250101_115201_060_001635",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250101_115201_060_001635",
+      "issue": "Expected one .txt, found 0"
+    },
+    {
+      "file": "20250102_004141_060_001636",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250102_004141_060_001636",
+      "issue": "Expected one .txt, found 0"
+    },
+    {
+      "file": "20250102_030539_060_001776",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250102_040246_060_001799",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250102_052929_060_001814",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250102_053058_060_001815",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250102_053637_060_001817",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250102_054848_060_001829",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20250102_090600_060_001978",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20260826_143408_060_000899",
+      "issue": "Expected one .jpg, found 0"
+    },
+    {
+      "file": "20260826_143408_060_000899",
+      "issue": "Expected one .txt, found 0"
+    }
+  ],
+  "unreadable": [
+    {
+      "file": "20250101_005944_060_001404.MP4",
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0x8d8804000] moov atom not found"
+    },
+    {
+      "file": "20250101_030217_060_001493.MP4",
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0xb20c30000] moov atom not found"
+    },
+    {
+      "file": "20250101_042956_060_001555.MP4",
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0xc22c08000] moov atom not found"
+    },
+    {
+      "file": "20250101_061653_060_001576.MP4",
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0x8d2c2c000] moov atom not found"
+    },
+    {
+      "file": "20250101_083659_060_001595.MP4",
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0x79303c000] moov atom not found"
+    },
+    {
+      "file": "20250101_103112_060_001598.MP4",
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0x86ec2c000] moov atom not found"
+    },
+    {
+      "file": "20250101_104811_060_001615.MP4",
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0xc7cc08000] moov atom not found"
+    },
+    {
+      "file": "20250101_114922_060_001634.MP4",
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0x810c08000] moov atom not found"
+    },
+    {
+      "file": "20250101_115201_060_001635.MP4",
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0x94303c000] moov atom not found"
+    },
+    {
+      "file": "20250102_004141_060_001636.MP4",
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0xb20c2c000] moov atom not found"
+    },
+    {
+      "file": "20250102_030539_060_001776.MP4",
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0x866c2c000] moov atom not found"
+    },
+    {
+      "file": "20250102_040246_060_001799.MP4",
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0xc4503c000] moov atom not found"
+    },
+    {
+      "file": "20250102_052929_060_001814.MP4",
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0x778c30000] moov atom not found"
+    },
+    {
+      "file": "20250102_053058_060_001815.MP4",
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0xa2cc30000] moov atom not found"
+    },
+    {
+      "file": "20250102_053637_060_001817.MP4",
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0x78cc2c000] moov atom not found"
+    },
+    {
+      "file": "20250102_054848_060_001829.MP4",
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0x740828000] moov atom not found"
+    },
+    {
+      "file": "20250102_090600_060_001978.MP4",
+      "error": "[mov,mp4,m4a,3gp,3g2,mj2 @ 0xb2a824000] moov atom not found"
+    }
+  ]
+}
